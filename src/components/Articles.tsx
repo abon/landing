@@ -15,23 +15,23 @@ import { MoveUpRight } from "lucide-react";
 const Articles = () => {
   const articles = (
     <div className="bg-[#181818] flex flex-col w-full h-full items-center justify-center mt-20 ">
-      <div className="grid mx-auto mt-16 p-10 lg:flex lg:justify-between items-center w-3/4 ">
-        <div>
-          <GradientText className="uppercase text-2xl font-semibold lg:text-2xl">
-            latest blog
+      <div className="grid mx-auto mt-8 p-6 lg:flex lg:justify-between items-center w-11/12 lg:w-3/4">
+        <div className="text-center lg:text-left">
+          <GradientText className="uppercase text-xl lg:text-2xl font-semibold">
+            Latest Blog
           </GradientText>
-          <h3 className="font-semibold text-white text-5xl lg:text-xl">
+          <h3 className="font-semibold text-white text-3xl lg:text-xl mt-4">
             Check Some of Latest News & Articles
           </h3>
         </div>
-        <div>
-          <Button className="flex items-start shadow-gradient mt-10 bg-white text-black hover:text-white ">
+        <div className="mt-6 lg:mt-0">
+          <Button className="flex items-start shadow-gradient bg-white text-black hover:text-white">
             Load More
           </Button>
         </div>
       </div>
       <section className="w-full flex flex-col justify-center items-center lg:flex-row ">
-        <div className="w-[600px] relative mt-24 p-12">
+        <div className="w-[600px] relative mt-8 p-12">
           <Image
             src="/article.png"
             width={500}
